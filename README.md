@@ -40,7 +40,7 @@ Material UI
 \
 👉**Search functionality**\
 \
-🔍 Efficient search functionality allows users to quickly find their favorite movies or explore new titles.\
+🔍 Efficient search functionality allows users to quickly find their favorite videos or explore new titles.\
 
 ## INSTALLATION
 
