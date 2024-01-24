@@ -1,0 +1,194 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* Thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #ff3295,
+    #ff2222
+  ); /* Use your preferred gradient colors */
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #ff4e78, #ff784e);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle when it's grabbing (clicked and held) */
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(to bottom, #ff324d, #ff5d32);
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background-color: #f0f0f0; /* Change the color as needed */
+}
+
+.category-btn:hover span {
+  color: white;
+}
+
+.react-player {
+  height: 100px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  width: 350px;
+}
+
+.borderemove:hover {
+  border-radius: 2;
+}
+.category-btn {
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 7px 15px;
+
+  border-radius: 20px;
+
+  transition: all 0.3s ease;
+}
+.category-btn:hover {
+  background-color: rgb(98, 0, 255);
+  color: white;
+}
+
+/* -------------- category-btn*/
+.Badge {
+  margin: 13px 0px;
+  -ms-flex-item-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 18px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+}
+.Badge.is-highlightBadge {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.Badge.is-highlightBadge:before {
+  -webkit-animation: badgeHighlightShimmer 3.5s;
+  animation: badgeHighlightShimmer 3.5s;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.18) 25%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.18) 75%,
+    rgba(255, 255, 255, 0)
+  );
+  content: '';
+  display: block;
+  height: 90px;
+  left: -60%;
+  position: absolute;
+  top: -150px;
+  -webkit-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  width: 200px;
+}
+
+@-webkit-keyframes badgeHighlightShimmer {
+  0% {
+    left: -100%;
+    top: -150px;
+  }
+
+  50% {
+    left: 100%;
+    top: 150px;
+  }
+
+  to {
+    left: 100%;
+    top: 150px;
+  }
+}
+
+@keyframes badgeHighlightShimmer {
+  0% {
+    left: -100%;
+    top: -150px;
+  }
+
+  50% {
+    left: 100%;
+    top: 150px;
+  }
+
+  to {
+    left: 100%;
+    top: 150px;
+  }
+}
+/*  */
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .copyright {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .scroll-horizontal {
+    overflow: auto;
+  }
+
+  .react-player {
+    height: 45vh;
+  }
+  .search-bar {
+    width: 200px;
+  }
+}
